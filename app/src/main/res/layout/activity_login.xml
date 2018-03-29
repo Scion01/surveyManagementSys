@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/splashbg"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:src="@drawable/water"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+
+    <Button
+        android:id="@+id/expandableButton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#353535"
+        android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+        android:onClick="expandableButton1"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Concerned Citizen"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#f5faff" />
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5faff"
+        app:ael_duration="400"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:ael_expanded="false"
+        app:ael_interpolator="decelerate"
+        app:ael_orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#696969"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text="Verify via..."
+            android:gravity="center"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content">
+                    <EditText android:id="@+id/phone_citi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:drawableLeft="@drawable/ic_call_black_24dp"
+                        android:hint="   Phone Number"
+                        android:lines="1"
+                        android:maxLength="14"/>
+                </android.support.design.widget.TextInputLayout>
+                <Button
+                    android:id="@+id/btn_otp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="26dp"
+                    android:padding="12dp"
+                    android:background="@drawable/button_style1"
+                    android:text="OTP"
+                    android:textSize="20sp"
+                    android:textColor="@color/personal"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#696969"
+                android:layout_marginBottom="20dp"
+                android:textSize="20sp"
+                android:text="OR"/>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_google"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/google"
+                android:inputType="text"
+                android:text="Google"
+                android:textColor="@color/personal"
+                android:textSize="20sp"
+                android:background="@drawable/button_style2"
+                android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout>
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            />
+
+    <Button
+        android:id="@+id/expandableButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#353535"
+        android:paddingLeft="10dp"
+        android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+        android:onClick="expandableButton2"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:text="Authorised Personal"
+        android:textSize="20sp"
+        android:textColor="#f5faff" />
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5faff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:ael_duration="400"
+        app:ael_expanded="true"
+        app:ael_interpolator="decelerate"
+        app:ael_orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:gravity="center">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:drawableLeft="@drawable/ic_call_black_24dp"
+                android:hint="   Phone Number"
+                android:lines="1"
+                android:maxLength="14"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="   Password"
+                android:drawableLeft="@drawable/ic_security_black_24dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:background="@drawable/button_style1"
+            android:text="Login"
+            android:textSize="20sp"
+            android:textColor="@color/personal"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+
+</LinearLayout>
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+    </LinearLayout>
+</ScrollView>

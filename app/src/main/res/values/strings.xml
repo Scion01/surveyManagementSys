@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SIH-MOWR</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Welcome!</string>
+    <string name="slide_1_desc">Thank you for being a responsible citizen!</string>
+
+    <string name="slide_2_title">Click Click!</string>
+    <string name="slide_2_desc">Capture images of affected sites on your device!</string>
+
+    <string name="slide_3_title">QnA...</string>
+    <string name="slide_3_desc">Provide us with valuable information!</string>
+
+    <string name="slide_4_title">Flood it away!</string>
+    <string name="slide_4_desc">Upload the images! You are Done!</string>
+    <string name="new_entry">Upload</string>
+    <string name="notify">Notifications</string>
+    <string name="past_entries">View Photos</string>
+    <string name="my_account">My Account</string>
+    <string name="support">Support</string>
+    <string name="about_us">About Us</string>
+
+</resources>
